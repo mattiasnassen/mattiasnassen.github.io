@@ -1,0 +1,30 @@
+doctype html
+html
+  head
+  body
+    figure#nespad
+      .cord
+      section.dpad-pane
+        .dpad-hole
+        #dpad
+          canvas#dpad-body width=150 height=150
+          button#up.button
+          button#right.button
+          button#down.button
+          button#left.button
+      section.menu-pane
+        .labels
+          label.select for="select" Select
+          label.start for="start" Start
+        .buttons
+          button#select.button.select Select
+          button#start.button.start Start
+      section.action-pane
+        .logo Nintendo
+        .buttons
+          label.label
+            | B
+            button#b.button
+          label.label
+            | A
+            button#a.button
