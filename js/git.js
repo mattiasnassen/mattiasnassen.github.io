@@ -19,7 +19,7 @@ function buttonPressB() {
     else{
         document.getElementById("coords").innerHTML = "Congratulations, the coordinates can be found if the images shown are interpreted correclty. Hint 10=0 etc.";
         /* add url to next step*/
-        window.open("http://mattiasnassen.github.io/mario.html");
+        location.href = "http://mattiasnassen.github.io/mario.html";
         }
     }
 function buttonPressSelect() {
