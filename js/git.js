@@ -17,8 +17,11 @@ function buttonPressB() {
     giveAnswer();
       }
     else{
-        document.getElementById("coords").innerHTML = "Congratulations, the coordinates can be found if the images shown are interpreted correclty. Hint 10=0 etc.";
-        document.getElementById("coords").innerHTML = "Link: " + txt.link("http://mattiasnassen.github.io/mario.html";
+        /*document.getElementById("coords").innerHTML = "Congratulations, the coordinates can be found if the images shown are interpreted correclty. Hint 10=0 etc.";
+        document.getElementById("coords").innerHTML = "Link: " + txt.link("http://mattiasnassen.github.io/mario.html";*/
+    var str = "Congratulations, the coordinates can be found if the images shown are interpreted correclty. Hint 10=0 etc.";
+    var result = str.link("http://mattiasnassen.github.io/mario.html");
+    document.getElementById("coords").innerHTML = result;
         }
     }
 function buttonPressSelect() {
