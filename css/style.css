@@ -26,18 +26,22 @@ body { font: 15px/2 nescontroller,sans-serif; }
 
 a:link {
     text-decoration: none;
+	color: black;
 }
 
 a:visited {
     text-decoration: none;
+	color: black;
 }
 
 a:hover {
     text-decoration: underline;
+	color: black;
 }
 
 a:active {
     text-decoration: underline;
+	color: black;
 }
 
 /**
