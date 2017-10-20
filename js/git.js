@@ -17,8 +17,8 @@ function buttonPressB() {
     giveAnswer();
       }
     else{
-        location.href = "http://mattiasnassen.github.io/mario.html";
         document.getElementById("coords").innerHTML = "Congratulations, the coordinates can be found if the images shown are interpreted correclty. Hint 10=0 etc.";
+        document.write("<p>Link: " + txt.link("http://mattiasnassen.github.io/mario.html") + "</p>");
         }
     }
 function buttonPressSelect() {
