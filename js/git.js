@@ -17,11 +17,9 @@ function buttonPressB() {
     giveAnswer();
       }
     else{
-        /*document.getElementById("coords").innerHTML = "Congratulations, the coordinates can be found if the images shown are interpreted correclty. Hint 10=0 etc.";
-        document.getElementById("coords").innerHTML = "Link: " + txt.link("http://mattiasnassen.github.io/mario.html";*/
-    var str = "Congratulations, the coordinates can be found if the images shown are interpreted correclty. Hint 10=0 etc.";
-    var result = str.link("http://mattiasnassen.github.io/mario.html");
-    document.getElementById("coords").innerHTML = result;
+        var str = "Congratulations! To get the coordinates to the entrence of level 1-2 follow the link. Use the provided geochecker for further information. Hint: 10=0 Etc.";
+        var result = str.link("http://mattiasnassen.github.io/mario.html");
+        document.getElementById("coords").innerHTML = result;
         }
     }
 function buttonPressSelect() {
