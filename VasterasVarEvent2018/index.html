@@ -20,7 +20,7 @@ $result = mysqli_query($db, $query);
 $row = mysqli_fetch_array($result);
 
 while ($row = mysqli_fetch_array($result)) {
- echo $row['idGeocacheCode'] . ' ' . $row['GCNumber'] . ': ' . $row['Code']<br />';
+ echo $row['GCNumber'].'<br />';
 }
 //Step 4
 mysqli_close($db);
