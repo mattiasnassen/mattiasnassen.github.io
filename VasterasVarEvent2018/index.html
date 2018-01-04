@@ -1,9 +1,14 @@
 <?php
-//Step1
- $db = mysqli_connect('den1.mysql1.gear.host','vastervarevent18','Sj2fhx~97g?7','vastervarevent18')
- or die('Error connecting to MySQL server.');
-$sql = "SELECT idGeocacheCode, GCNumber, Code, FROM geocachecode";
-$result = $db->query($sql);
+
+// Create connection
+$conn = mysqli_connect('den1.mysql1.gear.host','vastervarevent18','Sj2fhx~97g?7','vastervarevent18')
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+} 
+
+$sql = "SELECT idGeocacheCode, GCNumber, Code FROM geocachecode";
+$result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
     // output data of each row
