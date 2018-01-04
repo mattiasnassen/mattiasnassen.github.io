@@ -17,8 +17,33 @@
 </head>
 
 <body>
-  <p>Level 1-2 GC6Y2B7 accessed by clicking below image</p>
-  <a href="https://mattiasnassen.github.io/GC6Y2B7.html" target="_blank"><img alt src="https://s3.amazonaws.com/gs-geo-images/39e2666b-4a43-4edf-bf1d-b35b775243d0_l.png" /></a>
-</a>
+<?php
+$servername = "den1.mysql1.gear.host";
+$username = "vastervarevent18";
+$password = "Sj2fhx~97g?7";
+$dbname = "vastervarevent18";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+} 
+
+$sql = "SELECT GCNumber, Code FROM geocachecode";
+$result = $conn->query($sql);
+
+if ($result->num_rows > 0) {
+    // output data of each row
+    while($row = $result->fetch_assoc()) {
+        echo "<br> id: ". $row["id"]. " - Name: ". $row["firstname"]. " " . $row["lastname"] . "<br>";
+    }
+} else {
+    echo "0 results";
+}
+
+$conn->close();
+?> 
+  
 </body>
 </html>
