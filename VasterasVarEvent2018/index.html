@@ -2,6 +2,18 @@
 //Step1
  $db = mysqli_connect('den1.mysql1.gear.host','vastervarevent18','Sj2fhx~97g?7','vastervarevent18')
  or die('Error connecting to MySQL server.');
+$sql = "SELECT idGeocacheCode, GCNumber, Code, FROM geocachecode";
+$result = $db->query($sql);
+
+if ($result->num_rows > 0) {
+    // output data of each row
+    while($row = $result->fetch_assoc()) {
+        echo "id: " . $row["idGeocacheCode"]. " - GC Code: " . $row["GCNumber"]. " " . $row["Code"]. "<br>";
+    }
+} else {
+    echo "0 results";
+}
+$conn->close();
 ?>
 
 <html>
