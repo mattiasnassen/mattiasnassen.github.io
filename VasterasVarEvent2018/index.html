@@ -21,29 +21,15 @@
 $servername = "den1.mysql1.gear.host";
 $username = "vastervarevent18";
 $password = "Sj2fhx~97g?7";
-$dbname = "vastervarevent18";
 
 // Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
+$conn = new mysqli($servername, $username, $password);
+
 // Check connection
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 } 
-
-$sql = "SELECT GCNumber, Code FROM geocachecode";
-$result = $conn->query($sql);
-
-if ($result->num_rows > 0) {
-    // output data of each row
-    while($row = $result->fetch_assoc()) {
-        echo "<br> id: ". $row["id"]. " - Name: ". $row["firstname"]. " " . $row["lastname"] . "<br>";
-    }
-} else {
-    echo "0 results";
-}
-
-$conn->close();
-?> 
-  
+echo "Connected successfully";
+?>
 </body>
 </html>
