@@ -1,35 +1,13 @@
-<!DOCTYPE html>
-<html >
-<head>
-  <meta charset="UTF-8">
-  <title>Digital Geocaches by mattias.nassen</title>
-  <style>
-  p {
-      font-family: "Arial", "Arial Black";
-      text-align: left; 
-    }
-  a {
-      text-decoration: none;
-      font-family: "Arial", "Arial Black";
-      color: black;
-    }
-</style>
-</head>
-
-<body>
 <?php
-$servername = "den1.mysql1.gear.host";
-$username = "vastervarevent18";
-$password = "Sj2fhx~97g?7";
-
-// Create connection
-$conn = new mysqli($servername, $username, $password);
-
-// Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-} 
-echo "Connected successfully";
+//Step1
+ $db = mysqli_connect('den1.mysql1.gear.host','vastervarevent18','Sj2fhx~97g?7','vastervarevent18')
+ or die('Error connecting to MySQL server.');
 ?>
+
+<html>
+ <head>
+ </head>
+ <body>
+ <h1>PHP connect to MySQL</h1>
 </body>
 </html>
