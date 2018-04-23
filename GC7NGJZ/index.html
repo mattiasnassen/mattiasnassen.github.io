@@ -1,4 +1,19 @@
 <html>
+    <script>
+        $$('ul li').each(function(){
+                         $$(this).tap(function(){
+                                      if($$(this).attr('rel') != "delete"){
+                                      var num = $$(this).attr('rel');
+                                      var temp = $$(".input-number").val() + num;
+                                      $$(".input-number").val(temp);
+                                      }else{
+                                      var temp = $$(".input-number").val();
+                                      temp = temp.slice(0,temp.length-1);
+                                      $$(".input-number").val(temp);
+                                      }
+                                      });
+                         });
+    </script>
     <head>
         <meta charset="utf-8" />
         <meta name="HandheldFriendly" content="True">
@@ -7,29 +22,29 @@
                 <meta name="apple-mobile-web-app-status-bar-style" content="black">
                     <meta name="format-detection" content="telephone=no">
                         <meta http-equiv="cleartype" content="on">
-                            <title>Numpad</title>
-                            <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Tangerine"><link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-                                <link rel="stylesheet" type="text/css" href="style.css">
-                                <script src="quo.js"></script>
-                                </head>
-                                <body>
+                            <title>GC7NGJZ</title>
+                            <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Tangerine">
+                            <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+                            <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+                            <body>
                                 <div id="container">
                                 <input class="input-number" readonly="true" type="text" placeholder="1234567890"/>
                                 <ul class="numpad">
-                                <li rel="1">1</li>
-                                <li rel="2">2</li>
-                                <li rel="3">3</li>
-                                <li rel="4">4</li>
-                                <li rel="5">5</li>
-                                <li rel="6">6</li>
-                                <li rel="7">7</li>
-                                <li rel="8">8</li>
-                                <li rel="9">9</li>
-                                <li rel=".">.</li>
-                                <li rel="0">0</li>
-                                <li rel="delete"><img src="https://devcode.name/numpad/delete.png" width="25" /></li>
+                                    <li rel="1">1</li>
+                                    <li rel="2">2</li>
+                                    <li rel="3">3</li>
+                                    <li rel="4">4</li>
+                                    <li rel="5">5</li>
+                                    <li rel="6">6</li>
+                                    <li rel="7">7</li>
+                                    <li rel="8">8</li>
+                                    <li rel="9">9</li>
+                                    <li rel=".">.</li>
+                                    <li rel="0">0</li>
+                                    <li rel="delete"><img src="https://devcode.name/numpad/delete.png" width="25" /></li>
                                 </ul>
-                                </div>
-                                </body>
-                                </html>
+                            </div>
+                            </body>
+</html>
                                 
