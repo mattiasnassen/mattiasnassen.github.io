@@ -41,7 +41,14 @@ $j(function(){
             //add any call action here
             var calling = new Audio('mp3/calling.mp3');
             calling.play();
-
+                if(total="446782878377")
+                {
+                var audio = new Audio('mp3/dummy.mp3');
+                calling.play();
+                }else{
+                var failed = new Audio('mp3/failed.mp3');
+                calling.play();
+                }
         }else{ number.append(index+1); }
     });
 
