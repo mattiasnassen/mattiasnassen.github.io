@@ -44,10 +44,10 @@ $j(function(){
                 if(total="446782878377")
                 {
                 var audio = new Audio('mp3/dummy.mp3');
-                calling.play();
+                audio.play();
                 }else{
                 var failed = new Audio('mp3/failed.mp3');
-                calling.play();
+                failed.play();
                 }
         }else{ number.append(index+1); }
     });
