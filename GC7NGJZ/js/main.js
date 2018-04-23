@@ -3,8 +3,7 @@
    ========================================================================== */
 var $j = jQuery.noConflict();
 var checkpoint = false
-function giveAnswer() {
-    var phone = total.text();
+function giveAnswer(phone) {
     if (phone =="446782878377") {
         checkPoint = true;
     }else{
@@ -48,7 +47,7 @@ $j(function(){
 
             //add any call action here
                 
-                giveAnswer();
+                giveAnswer(total.text);
                 if(checkPoint == false){
                 var calling = new Audio('mp3/calling.mp3');
                 calling.play();
