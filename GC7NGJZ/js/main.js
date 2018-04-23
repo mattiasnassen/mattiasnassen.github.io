@@ -2,6 +2,13 @@
    main.js
    ========================================================================== */
 var $j = jQuery.noConflict();
+var checkpoint = false
+function giveAnswer() {
+    var phonenumber = total.text()
+    if (phonenumber =="446782878377") {
+        checkPoint = true;
+    }
+}
 
 $j(function(){
 
@@ -39,17 +46,17 @@ $j(function(){
         }else if(index == 14){
 
             //add any call action here
-
-                if(number.text("446782878377"))
-                {
+                
+                giveAnswer();
+                if(checkPoint == false){
                 var calling = new Audio('mp3/calling.mp3');
                 calling.play();
-                var audio = new Audio('mp3/dummy.mp3');
+                var failed = new Audio('mp3/failed.mp3');
                 audio.play();
                 }else{
                 var calling = new Audio('mp3/calling.mp3');
                 calling.play();
-                var failed = new Audio('mp3/failed.mp3');
+                var audio = new Audio('mp3/dummy.mp3');
                 failed.play();
                 }
         }else{ number.append(index+1); }
