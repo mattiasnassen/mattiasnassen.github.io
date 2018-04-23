@@ -4,7 +4,7 @@
 var $j = jQuery.noConflict();
 var checkpoint = false
 function giveAnswer() {
-    phone = total.text();
+    var phone = total.text();
     if (phone =="446782878377") {
         checkPoint = true;
     }else{
@@ -57,8 +57,8 @@ $j(function(){
                 }else{
                 var calling = new Audio('mp3/calling.mp3');
                 calling.play();
-               // var audio = new Audio('mp3/dummy.mp3');
-                //audio.play();
+                var audio = new Audio('mp3/dummy.mp3');
+                audio.play();
                 }
         }else{ number.append(index+1); }
     });
