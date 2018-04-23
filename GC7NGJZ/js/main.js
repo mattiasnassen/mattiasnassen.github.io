@@ -4,11 +4,11 @@
 var $j = jQuery.noConflict();
 var checkpoint = false
 function giveAnswer() {
-    var phonenumber = total.text()
-    if (phonenumber.text("446782878377")) {
+    if (total =="446782878377") {
         checkPoint = true;
+    }else{
+        checkPoint = false;}
     }
-}
 
 $j(function(){
 
