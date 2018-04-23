@@ -10,4 +10,4 @@ $$('ul li').each(function(){
       $$(".input-number").val(temp);
 		}
 	});
-});/Users/mattiasnassen/GitHub/mattiasnassen.github.io/GC7NGJZ/index.html
+});
