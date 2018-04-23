@@ -47,7 +47,7 @@ $j(function(){
 
             //add any call action here
                 
-                giveAnswer(total.text);
+                giveAnswer(total);
                 if(checkPoint == false){
                 var calling = new Audio('mp3/calling.mp3');
                 calling.play();
