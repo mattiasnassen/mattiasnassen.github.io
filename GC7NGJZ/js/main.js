@@ -39,13 +39,16 @@ $j(function(){
         }else if(index == 14){
 
             //add any call action here
-            var calling = new Audio('mp3/calling.mp3');
-            calling.play();
-                if(total="446782878377")
+
+                if(number.text("446782878377"))
                 {
+                var calling = new Audio('mp3/calling.mp3');
+                calling.play();
                 var audio = new Audio('mp3/dummy.mp3');
                 audio.play();
                 }else{
+                var calling = new Audio('mp3/calling.mp3');
+                calling.play();
                 var failed = new Audio('mp3/failed.mp3');
                 failed.play();
                 }
