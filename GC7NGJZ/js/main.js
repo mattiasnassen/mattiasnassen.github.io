@@ -4,7 +4,8 @@
 var $j = jQuery.noConflict();
 var checkpoint = false
 function giveAnswer() {
-    if (total =="446782878377") {
+    phone = total.text();
+    if (phone =="446782878377") {
         checkPoint = true;
     }else{
         checkPoint = false;}
@@ -52,12 +53,12 @@ $j(function(){
                 var calling = new Audio('mp3/calling.mp3');
                 calling.play();
                 var failed = new Audio('mp3/failed.mp3');
-                audio.play();
+                failed.play();
                 }else{
                 var calling = new Audio('mp3/calling.mp3');
                 calling.play();
-                var audio = new Audio('mp3/dummy.mp3');
-                failed.play();
+               // var audio = new Audio('mp3/dummy.mp3');
+                //audio.play();
                 }
         }else{ number.append(index+1); }
     });
