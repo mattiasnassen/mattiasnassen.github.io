@@ -20,8 +20,8 @@ ul{
 
 .button-3 li{
   display: inline-block;
-  width: 50px;
-  max-width: 50px;
+  width: 100px;
+  max-width: 100px;
   height:1em;
   padding-top:1em;
   padding-bottom:1em;
@@ -72,7 +72,7 @@ ul{
 #dialpad,
 #actions,
 #numberDisplay{
-  max-width: 610px;
+  max-width: 310px;
   margin: 0 auto;
 }
 #dialpad.deactive{
