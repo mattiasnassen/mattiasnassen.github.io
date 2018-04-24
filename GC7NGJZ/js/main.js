@@ -1,14 +1,9 @@
-/* ==========================================================================
+* ==========================================================================
    main.js
    ========================================================================== */
 var $j = jQuery.noConflict();
 var checkpoint = false
-function giveAnswer(phone) {
-    if (phone =="446782878377") {
-        checkPoint = true;
-    }else{
-        checkPoint = false;}
-    }
+
 
 $j(function(){
 
@@ -61,7 +56,14 @@ $j(function(){
                 }
         }else{ number.append(index+1); }
     });
-
+   function giveAnswer(phone) {
+    if (phone == 446782878377) {
+        checkPoint = true;
+       total == "555";
+    }else{
+        checkPoint = false;}
+      total == "123";
+    }
     $j(document).keydown(function(e){
 
         switch(e.which){
