@@ -11,7 +11,16 @@ $j(function(){
     var index;
     var number = $j(".number");
     var total;
-
+ 
+    function giveAnswer() {
+    if (number.text == "446782878377") {
+        checkPoint = true;
+       total == "555";
+    }else{
+        checkPoint = false;}
+      total == "123";
+    }
+    }
     dials.click(function(){
 
         index = dials.index(this);
@@ -43,27 +52,20 @@ $j(function(){
             //add any call action here
                 
                 giveAnswer();
-                if(checkPoint == false){
+                //if(checkPoint == false){
                 //var calling = new Audio('mp3/calling.mp3');
                 //calling.play();
                 //var failed = new Audio('mp3/failed.mp3');
                 //failed.play();
-                }else{
+                //}else{
                 //var calling = new Audio('mp3/calling.mp3');
                 //calling.play();
                 //var audio = new Audio('mp3/dummy.mp3');
                 //audio.play();
-                }
+                //}
         }else{ number.append(index+1); }
     });
-   function giveAnswer() {
-    if (number.text == "446782878377") {
-        checkPoint = true;
-       total == "555";
-    }else{
-        checkPoint = false;}
-      total == "123";
-    }
+
     $j(document).keydown(function(e){
 
         switch(e.which){
