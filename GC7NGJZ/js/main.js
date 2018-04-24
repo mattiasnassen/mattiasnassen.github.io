@@ -39,8 +39,10 @@ $j(function(){
         }else if(index == 14){
 
             //add any call action here
+                
          var calling = new Audio('mp3/calling.mp3');
                 calling.play();
+                number.empty().append("555");
 
         }else{ number.append(index+1); }
     });
