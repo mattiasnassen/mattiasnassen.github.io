@@ -40,10 +40,13 @@ $j(function(){
 
             //add any call action here
                 
-
-                if ((number == 5)) {
+                total = number.text();
+                if ((total == "5")) {
                 var calling = new Audio('mp3/calling.mp3');
                 calling.play();
+                } else{
+                var failed = new Audio('mp3/failed.mp3');
+                failed.play();
                 }
 
         }else{ number.append(index+1); }
