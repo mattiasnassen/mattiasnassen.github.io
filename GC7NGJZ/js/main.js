@@ -41,7 +41,7 @@ $j(function(){
             //add any call action here
                 
                 total = number.text();
-                if ((total == "5")) {
+                if ((total == "446782878377")) {
                 var calling = new Audio('mp3/calling.mp3');
                 calling.play();
                 } else{
