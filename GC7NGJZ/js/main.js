@@ -46,7 +46,7 @@ $j(function(){
                 gb.play();
                 } else{
                 var calling = new Audio('mp3/calling.mp3');
-                failed.play();
+                calling.play();
                 }
 
         }else{ number.append(index+1); }
