@@ -42,7 +42,7 @@ $j(function(){
 
             //add any call action here
                 
-                giveAnswer(total);
+                giveAnswer();
                 if(checkPoint == false){
                 //var calling = new Audio('mp3/calling.mp3');
                 //calling.play();
