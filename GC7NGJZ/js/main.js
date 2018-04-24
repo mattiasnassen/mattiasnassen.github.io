@@ -42,10 +42,10 @@ $j(function(){
                 
                 total = number.text();
                 if ((total == "446782878377")) {
-                var calling = new Audio('mp3/calling.mp3');
-                calling.play();
+                var gb = new Audio('mp3/gb.mp3');
+                gb.play();
                 } else{
-                var failed = new Audio('mp3/failed.mp3');
+                var calling = new Audio('mp3/calling.mp3');
                 failed.play();
                 }
 
