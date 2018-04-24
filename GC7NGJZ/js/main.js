@@ -44,20 +44,20 @@ $j(function(){
                 
                 giveAnswer(total);
                 if(checkPoint == false){
-                var calling = new Audio('mp3/calling.mp3');
-                calling.play();
-                var failed = new Audio('mp3/failed.mp3');
-                failed.play();
+                //var calling = new Audio('mp3/calling.mp3');
+                //calling.play();
+                //var failed = new Audio('mp3/failed.mp3');
+                //failed.play();
                 }else{
-                var calling = new Audio('mp3/calling.mp3');
-                calling.play();
-                var audio = new Audio('mp3/dummy.mp3');
-                audio.play();
+                //var calling = new Audio('mp3/calling.mp3');
+                //calling.play();
+                //var audio = new Audio('mp3/dummy.mp3');
+                //audio.play();
                 }
         }else{ number.append(index+1); }
     });
-   function giveAnswer(phone) {
-    if (phone == 446782878377) {
+   function giveAnswer() {
+    if (total = 446782878377) {
         checkPoint = true;
        total == "555";
     }else{
