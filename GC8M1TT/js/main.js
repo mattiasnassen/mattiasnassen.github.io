@@ -160,7 +160,7 @@
     modalOverlay.className = state;
 
     if (state === 'won') {
-      modalMessage.innerHTML = '<h2>You cracked the code!</h2> <p>Great! You are awesome! You should feel good now...</p> <button class="large" id="hideModal">OK</button> <button id="restartGame" class="large primary">Restart</button>';
+      modalMessage.innerHTML = '<h2>You cracked the code!</h2> <p>Congratulations, you can open the geocache with code ABCD</p> <button class="large" id="hideModal">OK</button> <button id="restartGame" class="large primary">Restart</button>';
       document.getElementById('restartGame').onclick = newGame;
       document.getElementById('hideModal').onclick = hideModal;
     } else
