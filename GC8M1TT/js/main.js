@@ -4,7 +4,7 @@
   var code = [], // Color sequence the player needs to guess
       guess = [], // Color sequence of player's guesses
       options = document.getElementsByClassName('option'),
-      inputRows = document.getEalementsByClassName('guess'),
+      inputRows = document.getElementsByClassName('guess'),
       hintContainer = document.getElementsByClassName('hint'),
       secretSockets = document.getElementsByClassName('secret socket'),
       modalOverlay = document.getElementById('modalOverlay'),
@@ -160,7 +160,7 @@
     modalOverlay.className = state;
 
     if (state === 'won') {
-      modalMessage.innerHTML = '<h2>You cracked the code!</h2> <p>To open the geocache use code ABCD!</p> <button class="large" id="hideModal">OK</button> <button id="restartGame" class="large primary">Restart</button>';
+      modalMessage.innerHTML = '<h2>You cracked the code!</h2> <p>Great! You are awesome! You should feel good now...</p> <button class="large" id="hideModal">OK</button> <button id="restartGame" class="large primary">Restart</button>';
       document.getElementById('restartGame').onclick = newGame;
       document.getElementById('hideModal').onclick = hideModal;
     } else
