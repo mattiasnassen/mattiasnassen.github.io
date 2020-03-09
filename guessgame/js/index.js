@@ -4,7 +4,7 @@ function getrandomnumber(min,max) {
 
 $(document).ready(function () {
     $('#tsfd').hide();
-    let rand = getrandomnumber(1,100);
+    let rand = getrandomnumber(1,1000);
 
     let guesspanel = $('#guesspanel');
     let hintpanel = $('#hintpanel');
