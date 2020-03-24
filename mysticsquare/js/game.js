@@ -169,5 +169,5 @@ function wonGame() {
 
 	setTimeout(function () {
 		showShutter("Restart");
-	}, 50000);
+	}, 350000);
 }
