@@ -11,11 +11,7 @@ var board = [
 var originalPos=[];
 
 var images = [
-	"resource/window.jpg",
-	"resource/cup.jpg",
-	"resource/tree.jpg",
-	"resource/cat.jpg",
-	"resource/eevee.jpg"
+	"resource/gurkburk.png",
 ];
 var currentImage = "url(" + images[Math.floor(Math.random() * images.length)] + ")";
 
