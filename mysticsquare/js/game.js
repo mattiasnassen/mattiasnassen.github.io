@@ -164,7 +164,7 @@ function wonGame() {
 		localStorage.setItem("playing",playing);		
 		paused = false;
 		clearInterval(timer);
-		showShutter("You won!");
+		showShutter("You won! Code top open the cache is XYZ");
 	}, 500);
 
 	setTimeout(function () {
