@@ -165,8 +165,10 @@ function wonGame() {
 		paused = false;
 		clearInterval(timer);
 		showShutter("You won! Code to open the cache is XYZ");
-		document.getElementById("messagebox").children[1].innerHTML = "Think inside the box!";
-	}, 500);
+		function displayResult() {
+  		document.getElementById("messagebox").children[1].innerHTML = "Think inside the box!";
+		}
+	}, 50000);
 
 	setTimeout(function () {
 		showShutter("Restart");
