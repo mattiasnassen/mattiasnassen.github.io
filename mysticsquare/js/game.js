@@ -164,7 +164,8 @@ function wonGame() {
 		localStorage.setItem("playing",playing);		
 		paused = false;
 		clearInterval(timer);
-		showShutter("You won! Code top open the cache is XYZ");
+		showShutter("You won! Code to open the cache is XYZ");
+		document.getElementById("messagebox").children[1].innerHTML = "Think inside the box!";
 	}, 500);
 
 	setTimeout(function () {
