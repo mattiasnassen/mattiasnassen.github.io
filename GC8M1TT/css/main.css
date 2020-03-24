@@ -110,7 +110,8 @@ body{
   position: relative;
   font-family: 'Open Sans', sans-serif;
   color: #fff;
-  background-color: #b3d4fc;;
+  background-color: #b3d4fc;
+  /*background-color:#339933;*/
   transition: background-color .5s ease;
 }
 
