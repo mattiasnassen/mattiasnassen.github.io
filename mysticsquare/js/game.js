@@ -168,9 +168,9 @@ function wonGame() {
 		function displayResult() {
   		document.getElementById("messagebox").children[1].innerHTML = "Think inside the box!";
 		}
-	}, 50000);
+	}, 500);
 
 	setTimeout(function () {
 		showShutter("Restart");
-	}, 1500);
+	}, 50000);
 }
