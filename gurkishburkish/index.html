@@ -144,7 +144,7 @@
     border: 1px solid #888;
 }
 #body{
-    font-size: 15px;
+    font-size: 25px;
     font-family: Arial, Helvetica, sans-serif;
 }
 </style>
@@ -153,14 +153,13 @@
 <body onload="init()">
     <div id="sketchpadapp">
         <div class="leftside">             
+		<p>Follow the audio instructions</p>	
+		<br>
+		<input type="submit" value="Clear Map" id="clearbutton" onclick="clearCanvas(canvas,ctx);">
+		<br>
 		<audio controls>
 			<source src="audio.mp3" />
         	</audio>
-		<br>
-		<br>
-	 	<p>Follow the audio instructions</p>	
-		<br>
-		<input type="submit" value="Clear Map" id="clearbutton" onclick="clearCanvas(canvas,ctx);">
 	</div>
         <div class="rightside">
             <canvas id="sketchpad" height="1200" width="1200">
